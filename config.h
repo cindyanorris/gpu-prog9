@@ -1,0 +1,2 @@
+#define THREADSPERBLOCK 512 
+#define MAXSHARED 12288 //in ints

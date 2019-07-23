@@ -1,0 +1,19 @@
+1) Suppose the THREADSPERBLOCK value was changed to be 1024.  What
+would then be the largest vector that this code could scan?
+
+2) Change this declaration in the kernel:
+__shared__ int shVector[MAXSHARED - THREADSPERBLOCK];
+
+to: 
+__shared__ int shVector[MAXSHARED - THREADSPERBLOCK + 1];
+
+Now, attempt to compile and run it.  What happens?
+
+3) Suppose the size of the shared memory allocated to a block is
+33,554,432 bytes and THREADSPERBLOCK is 512.  What would then be 
+the largest vector size that this code could handle?
+
+4) If the size of the shared memory is S in bytes and the size of the
+block is B threads, what is the largest vector size that this code
+can handle?
+
